@@ -5,7 +5,7 @@ def main() -> None:
         while user_input.lower().strip() != "stop":
             file.write(user_input + "\n")
             user_input = input("Enter new line of content: ")
-    print(f"File name: \"{file_name}\"\nFile content: ")
+    print(f"File name: '{file_name}'\nFile content: ")
     with open(file_name) as f:
         for line in f.read():
             print(f"# {line}", end="")
